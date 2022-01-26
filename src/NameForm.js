@@ -6,6 +6,7 @@ import { v4 as uuid } from 'uuid';
 
 import config from "./config";
 
+// This is a component for display entry page form with name and email
 class NameForm extends React.Component {
 
     constructor(props) {
@@ -72,7 +73,7 @@ class NameForm extends React.Component {
         let queryString = new URLSearchParams(data).toString();
 
         fetch(config.api_host+"save_data?"+queryString, {
-            method: "GET",
+            method: "GET", //"POST" // was using POST method but changed to GET for easier debugging and development mode
             //body: data
         })
         .then(response => response.json())
@@ -81,6 +82,7 @@ class NameForm extends React.Component {
         })
         .catch((err) => console.warn("error: "+err));
 
+        //This page will have to include ping ajax to prevent user from became inactive
         let timer = setInterval(() => this.pingOnline(), config.ping_delay);
 
         event.preventDefault();
