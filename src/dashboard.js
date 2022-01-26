@@ -6,8 +6,8 @@ import TableHead from "@mui/material/TableHead";
 import TableBody from "@mui/material/TableBody";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper"
-import Popup from './Popup';
-import config from "./config";
+import Popup from './Popup'; //User details popup
+import config from "./config"; //Config constants
 
 import "./App.css";
 
