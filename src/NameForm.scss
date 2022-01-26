@@ -1,0 +1,77 @@
+.container{
+  width: 50vw;
+  margin: 50px auto;
+
+  h1{
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.name{
+  margin: 25px 0;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 90%;
+  height: 25px;
+
+  input[type="text"]{
+    width: 40%;
+    margin: 0 20px 0 0;
+    padding: 5px;
+    font-style: italic;
+    border: 1px solid #434753;
+    background: transparent;
+    color: #434753;
+    outline-color: #FFD6BA;
+  }
+
+  label#for_name{
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+
+}
+
+.email{
+  width: 50%;
+  margin: 0 0 20px 45px;
+  height: 25px;
+  padding: 5px;
+  font-style: italic;
+  border: 2px solid #434753;
+  background: transparent;
+  color: #434753;
+  outline-color: #FFD6BA;
+
+}
+
+label#for_email{
+  position: absolute;
+  top: -30px;
+  left: 0;
+  margin: 10px 0;
+}
+
+.send{
+  width: 100px;
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  background: #434753;
+  color: #FFD6BA;
+  cursor: pointer;
+}
+
+#result_message{
+  display: none;
+}
